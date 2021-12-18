@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+  background-color: #dbdbdb;
+}
+
+.btn_follow {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #3f7ee8;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_follow span {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  animation: circle 0.9s linear infinite;
+}
+
+@keyframes circle {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0.9;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
